@@ -36,7 +36,7 @@ const owner = new mongoose.Schema({
   books: [book],
 });
 
-const Owners = mongoose.model("Owner", owner);
+const Owners = mongoose.model("bookOwnera", owner);
 
 function seedOwnerCollection() {
   const maram = new Owners({
@@ -44,14 +44,14 @@ function seedOwnerCollection() {
 
     books: [
       {
-        name: "book1",
-        desc: "this book about .......",
-        img: "https://images.pexels.com/photos/3248644/pexels-photo-3248644.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        name: "The Candy Makers",
+        desc: "This Book About CANDY",
+        img: "https://www.thechildrensbookreview.com/wp-content/uploads/2015/02/The-Candymakers-By-Wendy-Mass.jpg",
       },
       {
-        name: "book2",
-        desc: "this book about darkkk .......",
-        img: "https://images.pexels.com/photos/3248644/pexels-photo-3248644.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        name: "My Little Golden Book About DOGS",
+        desc: "This Book About Dogs",
+        img: "https://images-na.ssl-images-amazon.com/images/I/A1wumyTpL+L.jpg",
       },
     ],
   });
