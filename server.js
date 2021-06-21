@@ -36,7 +36,7 @@ const owner = new mongoose.Schema({
   books: [book],
 });
 
-const Owners = mongoose.model("Book", owner);
+const Owners = mongoose.model("Owner", owner);
 
 function seedOwnerCollection() {
   const maram = new Owners({
@@ -46,12 +46,12 @@ function seedOwnerCollection() {
       {
         name: "book1",
         desc: "this book about .......",
-        img: "https://www.google.jo/url?sa=i&url=https%3A%2F%2Fapkpure.com%2Far%2Fblack-background-wallpapers%2Fcom.blackbackgroundwallpapersimages&psig=AOvVaw1oMLBJSsh1-RDqbzLekplX&ust=1624363176131000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCMj4xK_WqPECFQAAAAAdAAAAABAD",
+        img: "https://images.pexels.com/photos/3248644/pexels-photo-3248644.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       },
       {
         name: "book2",
         desc: "this book about darkkk .......",
-        img: "https://www.google.jo/url?sa=i&url=https%3A%2F%2Fapkpure.com%2Far%2Fblack-background-wallpapers%2Fcom.blackbackgroundwallpapersimages&psig=AOvVaw1oMLBJSsh1-RDqbzLekplX&ust=1624363176131000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCMj4xK_WqPECFQAAAAAdAAAAABAD",
+        img: "https://images.pexels.com/photos/3248644/pexels-photo-3248644.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       },
     ],
   });
